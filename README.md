@@ -1,2 +1,1 @@
-# cio-js-sdk
-Connio JavaScript SDK
+# Connio JavaScript SDK
