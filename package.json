@@ -1,0 +1,24 @@
+{
+  "name": "@evanj0hnson/js-sdk",
+  "version": "0.1.0-alpha.0",
+  "description": "Connio JavaScript SKD",
+  "main": "./src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvanJ0hnson/cio-js-sdk.git"
+  },
+  "author": "Connio Inc.",
+  "contributors": [
+    "Connio Inc.",
+    "Ivan Gerasimov <ivangerasimow@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EvanJ0hnson/cio-js-sdk/issues"
+  },
+  "homepage": "https://github.com/EvanJ0hnson/cio-js-sdk#readme",
+  "devDependencies": {
+    "husky": "4.3.0"
+  },
+  "dependencies": {}
+}
