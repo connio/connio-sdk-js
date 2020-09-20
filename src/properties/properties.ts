@@ -23,8 +23,6 @@ export class Properties
   }
 
   public async list({ ownerId }: { ownerId: string }): Promise<IProperty[]> {
-    console.log('_Properties :: list');
-
     return await super.list({ ownerId });
   }
 

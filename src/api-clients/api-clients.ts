@@ -31,7 +31,6 @@ export class ApiClients extends AbstractEntityApi<IApiClient, INewApiClient> {
   }
 
   public async regenerate(id: string): Promise<IApiClientKey> {
-    console.log('asd')
     return await this.client.post<IApiClientKey>(`/${id}/apikey`, { id });
   }
 }
