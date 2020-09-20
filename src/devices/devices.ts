@@ -6,7 +6,7 @@ import {
 import { IDevice } from '../entities';
 
 export interface IDevices extends IAbstractEntityApi<IDevice> {
-  associateWithApps(deviceId: string, appId: string): Promise<IDevice>;
+  associateWithApps(deviceId: string, ...appRef: string[]): Promise<IDevice>;
 }
 export interface IDevicesOptions extends IAbstractEntityOptions {}
 
