@@ -4,6 +4,7 @@ import { IdentityPath } from './definitions';
 
 export interface IAuth {
   login(user: IUserCredentials): Promise<IAuthData>;
+  requestPasswordReset(email: string): Promise<{}>
 }
 
 interface IAuthOptions {
@@ -19,5 +20,11 @@ export class Auth {
 
   async login(user: IUserCredentials): Promise<IAuthData> {
     return await this._client.post<IAuthData>(IdentityPath.LogIn, user);
+  }
+
+  async requestPasswordReset(email: string): Promise<{}> {
+    return await this._client.post(IdentityPath.PasswordResetRequest, {
+      email,
+    });
   }
 }
