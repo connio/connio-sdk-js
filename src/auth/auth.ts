@@ -6,6 +6,7 @@ export interface IAuth {
   login(user: IUserCredentials): Promise<IAuthData>;
   requestPasswordReset(email: string): Promise<{}>;
   resetPassword({ password, token }: { password: string, token: string }): Promise<any>;
+  signup(accountData: any): Promise<any>
 }
 
 interface IAuthOptions {
@@ -34,5 +35,9 @@ export class Auth {
       password,
       token,
     })
+  }
+
+  public async signup(accountData: any): Promise<any> {
+    return await this._client.post(IdentityPath.SignUp, accountData)
   }
 }
