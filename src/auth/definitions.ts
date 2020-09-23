@@ -1,4 +1,5 @@
 export enum IdentityPath {
   LogIn = '/identity/login',
-  PasswordResetRequest = '/identity/request-password-reset'
+  PasswordReset = '/identity/reset-password',
+  PasswordResetRequest = '/identity/request-password-reset',
 }
