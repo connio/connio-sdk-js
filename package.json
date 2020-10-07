@@ -1,11 +1,11 @@
 {
-  "name": "@evanj0hnson/js-sdk",
-  "version": "0.1.0-alpha.3",
-  "description": "Connio JavaScript SKD",
+  "name": "@connio/js-sdk",
+  "version": "0.1.0-alpha.0",
+  "description": "Connio JavaScript SDK",
   "main": "./src/index.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EvanJ0hnson/cio-js-sdk.git"
+    "url": "git+https://github.com/connio/connio-sdk-js.git"
   },
   "author": "Connio Inc.",
   "contributors": [
@@ -14,9 +14,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/EvanJ0hnson/cio-js-sdk/issues"
+    "url": "https://github.com/connio/connio-sdk-js/issues"
   },
-  "homepage": "https://github.com/EvanJ0hnson/cio-js-sdk#readme",
+  "homepage": "https://github.com/connio/connio-sdk-js#readme",
   "devDependencies": {
     "husky": "4.3.0"
   },
