@@ -40,5 +40,5 @@ export interface IDeleteResponse {
 }
 
 export interface IQueryParams {
-  [key: string]: string | number;
+  [key: string]: string;
 }
