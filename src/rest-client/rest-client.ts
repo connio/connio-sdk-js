@@ -10,6 +10,14 @@ import {
   RequestMethod,
 } from './definitions';
 
+/**
+ * @todo
+ * - Move to utils
+ */
+export function identity<T = any>(value: T) {
+  return value;
+}
+
 export interface IRestClient {
   get<T>(url: string, queryParams?: IQueryParams): Promise<T>;
   post<T>(url: string, payload: TPostRequestPayload): Promise<T>;
@@ -80,9 +88,15 @@ export class RestClient implements IRestClient {
     let queryString = '';
 
     if (queryParams) {
-      let queryParamList = Object.entries(queryParams).map(([key, value]) => {
-        return `${key}=${value}`;
-      });
+      let queryParamList = Object.entries(queryParams)
+        .map(([key, value]) => {
+          if (value === undefined) {
+            return undefined;
+          }
+
+          return `${key}=${value}`;
+        })
+        .filter(identity);
 
       queryString = `?${queryParamList.join('&')}`;
     }
