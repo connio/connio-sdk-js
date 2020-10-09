@@ -4,4 +4,5 @@ export { Apps, IApps } from './apps';
 export { Auth, IAuth } from './auth';
 export { ICredentialsStore } from './credentials';
 export { Devices, IDevices } from './devices';
+export { IDisposable } from './disposable';
 export { RestClient } from './rest-client';
