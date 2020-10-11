@@ -3,6 +3,7 @@ export { AppProfiles, IAppProfiles } from './app-profiles';
 export { Apps, IApps } from './apps';
 export { Auth, IAuth } from './auth';
 export { ICredentialsStore } from './credentials';
+export { DeviceProfiles, IDeviceProfiles } from './device-profiles';
 export { Devices, IDevices } from './devices';
 export { IDisposable } from './disposable';
 export { RestClient } from './rest-client';

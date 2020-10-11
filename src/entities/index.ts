@@ -13,6 +13,7 @@ export { IAuthData } from './auth-data';
 export { ConnectionStatus } from './connection-status';
 export { ICredentials } from './credentials';
 export { IDevice } from './device';
+export { IDeviceProfile } from './device-profile';
 export { EntityStatus } from './entity-status';
 export { EntityType } from './entity-type';
 export { IEnvConfig } from './env-config';

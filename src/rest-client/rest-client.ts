@@ -120,7 +120,9 @@ export class RestClient implements IRestClient {
       let rawResponse = await fetch(`${this._baseUrl}${url}`, config);
 
       if (!rawResponse.ok) {
-        throw rawResponse;
+        let error = await rawResponse.json();
+
+        throw error;
       }
 
       let contentType = rawResponse.headers.get(RequestHeader.ContentType);
