@@ -1,3 +1,13 @@
+## 0.1.0-alpha.2 (2020-10-11)
+
+### New Features & Enhancements
+
+- feat(\*) Implement "DeviceProfiles" module
+
+### Breaking Changes
+
+- feat(RestClient) Return parsed error
+
 ## 0.1.0-alpha.1 (2020-10-09)
 
 ### New Features & Enhancements
