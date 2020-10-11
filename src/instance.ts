@@ -3,6 +3,7 @@ import { AppProfiles, IAppProfiles } from './app-profiles';
 import { Apps, IApps } from './apps';
 import { Auth, IAuth } from './auth';
 import { CredentialsStore, ICredentialsStore } from './credentials';
+import { DeviceProfiles, IDeviceProfiles } from './device-profiles';
 import { Devices, IDevices } from './devices';
 import { IEnvConfig } from './entities';
 import { IProperties, Properties } from './properties';
@@ -15,6 +16,7 @@ export interface IPlatform {
   credentialsStore: ICredentialsStore;
   properties: IProperties;
   devices: IDevices;
+  deviceProfiles: IDeviceProfiles;
   apps: IApps;
   appProfiles: IAppProfiles;
   apiClients: IApiClients;
@@ -45,6 +47,9 @@ export async function bootstrap(env: IEnvConfig): Promise<IPlatform> {
       client: restClient,
     }),
     devices: new Devices({
+      client: restClient,
+    }),
+    deviceProfiles: new DeviceProfiles({
       client: restClient,
     }),
     apps: new Apps({
