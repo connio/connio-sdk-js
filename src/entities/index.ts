@@ -12,6 +12,12 @@ export { IAppProfile } from './app-profile';
 export { IAuthData } from './auth-data';
 export { ConnectionStatus } from './connection-status';
 export { ICredentials } from './credentials';
+export {
+  IDataConnector,
+  IDataConnectorSSLConfig,
+  IKafkaDataConnector,
+} from './data-connector';
+export { DataConnectorType } from './data-connector-type';
 export { IDevice } from './device';
 export { IDeviceProfile } from './device-profile';
 export { EntityStatus } from './entity-status';
