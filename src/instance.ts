@@ -3,6 +3,7 @@ import { AppProfiles, IAppProfiles } from './app-profiles';
 import { Apps, IApps } from './apps';
 import { Auth, IAuth } from './auth';
 import { CredentialsStore, ICredentialsStore } from './credentials';
+import { DataConnectors, IDataConnectors } from './data-connectors';
 import { DeviceProfiles, IDeviceProfiles } from './device-profiles';
 import { Devices, IDevices } from './devices';
 import { IEnvConfig } from './entities';
@@ -20,6 +21,7 @@ export interface IPlatform {
   apps: IApps;
   appProfiles: IAppProfiles;
   apiClients: IApiClients;
+  dataConnectors: IDataConnectors;
 }
 
 let platform: IPlatform;
@@ -59,6 +61,9 @@ export async function bootstrap(env: IEnvConfig): Promise<IPlatform> {
       client: restClient,
     }),
     apiClients: new ApiClients({
+      client: restClient,
+    }),
+    dataConnectors: new DataConnectors({
       client: restClient,
     }),
   };
