@@ -7,4 +7,5 @@ export { DataConnectors, IDataConnectors } from './data-connectors';
 export { DeviceProfiles, IDeviceProfiles } from './device-profiles';
 export { Devices, IDevices } from './devices';
 export { IDisposable } from './disposable';
+export { IMethods, Methods } from './methods';
 export { RestClient } from './rest-client';

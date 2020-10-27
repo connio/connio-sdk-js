@@ -7,6 +7,7 @@ import { DataConnectors, IDataConnectors } from './data-connectors';
 import { DeviceProfiles, IDeviceProfiles } from './device-profiles';
 import { Devices, IDevices } from './devices';
 import { IEnvConfig } from './entities';
+import { IMethods, Methods } from './methods';
 import { IProperties, Properties } from './properties';
 import { IRestClient, RestClient } from './rest-client';
 
@@ -22,6 +23,7 @@ export interface IPlatform {
   appProfiles: IAppProfiles;
   apiClients: IApiClients;
   dataConnectors: IDataConnectors;
+  methods: IMethods;
 }
 
 let platform: IPlatform;
@@ -64,6 +66,9 @@ export async function bootstrap(env: IEnvConfig): Promise<IPlatform> {
       client: restClient,
     }),
     dataConnectors: new DataConnectors({
+      client: restClient,
+    }),
+    methods: new Methods({
       client: restClient,
     }),
   };
