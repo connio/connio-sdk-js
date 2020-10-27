@@ -1,3 +1,8 @@
+## 0.1.0-alpha.4 (2020-10-27)
+
+### New Features & Enhancements
+- feat(\*) Implement "Methods" API and types
+
 ## 0.1.0-alpha.3 (2020-10-21)
 
 ### New Features & Enhancements

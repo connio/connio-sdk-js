@@ -23,6 +23,7 @@ export { IDeviceProfile } from './device-profile';
 export { EntityStatus } from './entity-status';
 export { EntityType } from './entity-type';
 export { IEnvConfig } from './env-config';
+export { IMethod, IMethodImplementation, MethodLanguage } from './method';
 export { IBoundaries as IPropertyBoundaries, IProperty } from './property';
 export { PropertyType } from './property-type';
 export { PublishType } from './publish-type';
