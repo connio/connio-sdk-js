@@ -1,3 +1,8 @@
+## 0.1.0-alpha.5 (2020-10-30)
+
+### New Features & Enhancements
+- feat(IApp, IDevice) Add "profileId" property
+
 ## 0.1.0-alpha.4 (2020-10-27)
 
 ### New Features & Enhancements
