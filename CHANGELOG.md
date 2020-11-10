@@ -1,3 +1,8 @@
+## 0.1.0-alpha.6 (2020-11-10)
+
+### New Features & Enhancements
+- feat(DataConnectors) Implement "test" method
+
 ## 0.1.0-alpha.5 (2020-10-30)
 
 ### New Features & Enhancements
