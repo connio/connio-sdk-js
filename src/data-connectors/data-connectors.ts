@@ -21,6 +21,7 @@ export interface IDataConnectors {
     entity: AtLeast<T, 'id'>,
     appRef: string,
   ): Promise<T>;
+  test<T extends IDataConnector>(connector: T, appRef: string): Promise<T>;
 }
 export interface IDataConnectorsOptions {
   client: IRestClient;
@@ -89,5 +90,12 @@ export class DataConnectors implements IDataConnectors {
     }
 
     return response;
+  }
+
+  public async test<T extends IDataConnector>(connector: T, appRef: string) {
+    return await this._client.post<T>(
+      `${this._makeBaseUrl(appRef)}/test`,
+      connector,
+    );
   }
 }
