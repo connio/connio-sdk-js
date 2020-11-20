@@ -1,3 +1,8 @@
+## 0.1.0-alpha.7 (2020-11-20)
+
+### New Features & Enhancements
+- feat(IApp, IDevice) Make "friendlyName" nullable
+
 ## 0.1.0-alpha.6 (2020-11-10)
 
 ### New Features & Enhancements
