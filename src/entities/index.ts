@@ -10,6 +10,8 @@ export { IApiKey } from './api-key';
 export { IApp } from './app';
 export { IAppProfile } from './app-profile';
 export { IAuthData } from './auth-data';
+export { IBroker } from './broker';
+export { IClient } from './clients';
 export { ConnectionStatus } from './connection-status';
 export { ICredentials } from './credentials';
 export {

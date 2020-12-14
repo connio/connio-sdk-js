@@ -2,6 +2,8 @@ import { ApiClients, IApiClients } from './api-clients';
 import { AppProfiles, IAppProfiles } from './app-profiles';
 import { Apps, IApps } from './apps';
 import { Auth, IAuth } from './auth';
+import { Brokers, IBrokers } from './brokers';
+import { Clients, IClients } from './clients';
 import { CredentialsStore, ICredentialsStore } from './credentials';
 import { DataConnectors, IDataConnectors } from './data-connectors';
 import { DeviceProfiles, IDeviceProfiles } from './device-profiles';
@@ -24,6 +26,8 @@ export interface IPlatform {
   apiClients: IApiClients;
   dataConnectors: IDataConnectors;
   methods: IMethods;
+  brokers: IBrokers;
+  clients: IClients;
 }
 
 let platform: IPlatform;
@@ -69,6 +73,12 @@ export async function bootstrap(env: IEnvConfig): Promise<IPlatform> {
       client: restClient,
     }),
     methods: new Methods({
+      client: restClient,
+    }),
+    brokers: new Brokers({
+      client: restClient,
+    }),
+    clients: new Clients({
       client: restClient,
     }),
   };
