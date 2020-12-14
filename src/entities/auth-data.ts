@@ -1,7 +1,7 @@
 import { IAccountEntity, IApiKey, IUser } from '../entities';
 
 export interface IAuthData {
-  account: IAccountEntity;
+  account?: IAccountEntity;
   apiKey: IApiKey;
   user: IUser;
 }
