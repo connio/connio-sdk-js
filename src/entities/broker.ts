@@ -1,6 +1,7 @@
 export interface IBroker {
   readonly id: string;
   displayName: string;
+  dateCreated: string;
 
   authStrategy: IBrokerAuthStrategy[];
 
