@@ -1,6 +1,7 @@
 export interface IBroker {
   readonly id: string;
   displayName: string;
+  dateCreated: string;
 
   authStrategy: IBrokerAuthStrategy[];
 
@@ -38,8 +39,16 @@ export interface ITopicAccess {
   access: TopicAccessLevel;
 }
 
+export enum AuthStrategyType {
+  Anonymous = 'anonymous',
+  Any = 'any',
+  Pattern = 'pattern',
+}
+
 export interface IBrokerAuthStrategy {
-  pattern: string;
+  type: AuthStrategyType;
+  pattern?: string;
   username?: string;
   password?: string;
+  routeTo: string;
 }
