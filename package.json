@@ -1,6 +1,6 @@
 {
   "name": "@connio/js-sdk",
-  "version": "0.1.0-alpha.9",
+  "version": "0.1.0-alpha.10",
   "description": "Connio JavaScript SDK",
   "main": "./src/index.ts",
   "repository": {
