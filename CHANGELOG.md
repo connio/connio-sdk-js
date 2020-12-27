@@ -1,3 +1,8 @@
+## 0.1.0-alpha.11 (2020-12-28)
+
+### New Features & Enhancements
+- feat(IAuth, Auth) Add "activateUser" method
+
 ## 0.1.0-alpha.7 (2020-11-20)
 
 ### New Features & Enhancements
