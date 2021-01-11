@@ -1,3 +1,8 @@
+## 0.1.0-alpha.12 (2021-01-12)
+
+### New Features & Enhancements
+- feat(auth/IdentityPath) Change login URL
+
 ## 0.1.0-alpha.11 (2020-12-28)
 
 ### New Features & Enhancements
